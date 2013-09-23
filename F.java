@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import static java.lang.System.arraycopy;
-
 /**
  * Created with IntelliJ IDEA.
  * User: MIKA
@@ -8,12 +7,8 @@ import static java.lang.System.arraycopy;
  * Time: 17:25
  * To change this template use File | Settings | File Templates.
  */
-
-
-
 public class F {
     int[] arr = {};
-
     void add (int index, int element){
         int[] tmpArray = new int [arr.length+1];
         arraycopy(arr, 0, tmpArray, 0, index);
@@ -21,7 +16,6 @@ public class F {
         tmpArray[index] = element;
         this.arr = tmpArray;
     }
-
     public static void main(String[] args) {
         arr.add(10);
         arr.add(20);
